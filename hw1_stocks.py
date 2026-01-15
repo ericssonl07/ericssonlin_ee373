@@ -1,5 +1,8 @@
 import random
 
+# Set seed
+random.seed(42)
+
 # Stock 1 has a return uniformly distributed between -1% and 1%
 stock1_return = lambda: random.uniform(0.99, 1.01)
 
