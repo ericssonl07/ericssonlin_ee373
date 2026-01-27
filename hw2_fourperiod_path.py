@@ -56,7 +56,7 @@ print(f"Max Reward Path: {' -> '.join(map(str, max_reward[0]))} with Reward = {m
 
 
 # DYNAMIC PROGRAMMING SOLUTION WITH BELLMAN OPTIMALITY EQUATION (VALUE ITERATION)
-values = {node: random.uniform(0, 1) for node in range(18)}
+values = {node: random.uniform(0, 1) if node < 12 else 0 for node in range(18)}
 gamma = 0.9
 max_iterations = 10 # For the seed 42, the minimum to obtain to the optimal path is 3 iterations
 iteration = 0
